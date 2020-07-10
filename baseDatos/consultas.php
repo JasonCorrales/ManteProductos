@@ -28,6 +28,7 @@
       $resultado = mysqli_query($GLOBALS['conexion'], $sql);   
   }
   
+  //Buscar producto por nombre
   function buscarProducto($nombre){
       $sql = "SELECT * FROM PRODUCTOS WHERE NOMBRE = '$nombre'";
        $resultado = mysqli_query($GLOBALS['conexion'], $sql); 
@@ -37,24 +38,11 @@
        return $producto;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //modificar un producto
-  
+  function modificarProducto($nombre,$marca,$presentacion,$cantidad,$precio){
+      $sql = "UPDATE PRODUCTOS SET MARCA ='$marca',PRESENTACION='$presentacion',CANTIDAD=$cantidad,PRECIO=$precio WHERE NOMBRE='$nombre'";
+      $resultado = mysqli_query($GLOBALS['conexion'], $sql);       
+  }
 
 
 ?>
