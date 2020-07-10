@@ -1,5 +1,5 @@
 <?php
-  require_once './baseDatos/consultas.php';   
+  require_once './baseDatos/productoConsultas.php';   
 
   //Aquí entra el Registrar y el modificar
   if(isset($_POST['accion'])){

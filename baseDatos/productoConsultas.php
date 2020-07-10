@@ -40,7 +40,7 @@
 
   //modificar un producto
   function modificarProducto($nombre,$marca,$presentacion,$cantidad,$precio){
-      $sql = "UPDATE PRODUCTOS SET MARCA ='$marca',PRESENTACION='$presentacion',CANTIDAD=$cantidad,PRECIO=$precio WHERE NOMBRE='$nombre'";
+      $sql = "UPDATE PRODUCTOS SET MARCA='$marca',PRESENTACION='$presentacion',CANTIDAD=$cantidad,PRECIO=$precio WHERE NOMBRE='$nombre'";
       $resultado = mysqli_query($GLOBALS['conexion'], $sql);       
   }
 

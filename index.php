@@ -27,7 +27,7 @@
                     <td><?=$producto['cantidad'];?></td>
                     <td><?=$producto['precio'];?></td>
                     <td><a href="editar.php?nombre=<?=$producto['nombre'];?>">Editar</a></td>
-                    <td><a href="mantenimiento.php?accion=eliminar&nombre=<?=$producto['nombre'];?>">Borrar</a></td>
+                    <td><a href="manteProductos.php?accion=eliminar&nombre=<?=$producto['nombre'];?>">Borrar</a></td>
                 </tr>
         <?php
                endforeach;

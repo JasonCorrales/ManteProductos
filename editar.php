@@ -7,7 +7,7 @@
 <section>
     <br>
     <h1>EDITAR UN PRODUCTO</h1>
-    <form method="post" action="mantenimiento.php">		
+    <form method="post" action="manteProductos.php">		
         <input type="text" placeholder="Nombre" name="nombre" required value="<?=$producto['nombre'];?>">
         <input type="text" placeholder="Marca"  name="marca" required value="<?=$producto['marca'];?>">
         <input type="text" placeholder="Presentación" name="presentacion" required value="<?=$producto['presentacion'];?>">                
